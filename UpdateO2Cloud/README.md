@@ -15,6 +15,7 @@
 - Mise à jour de Windows via la commande ```control update.
 - Vérification de la version de Windows avec ```winver.
 - Mise à jour du logiciel de sécurité Bitdefender via ```updcenter.exe.
+- Vérification du nom de l'antivirus ```avsecname.
 - Interface graphique avec un menu et une barre d'outils personnalisés.
 - Prise en charge des arguments en ligne de commande pour un mode silencieux ou des mises à jour spécifiques.
 
@@ -33,6 +34,7 @@ L'application prend en charge plusieurs arguments en ligne de commande :
     /winver : Affiche la version de Windows.
     /winupdate : Lance les mises à jour de Windows.
     /avsecupdate : Lance la mise à jour de l'antivirus (Bitdefender).
+    /avsecname : Affiche le nom de l'antivirus.
 
 ## Installation
 
