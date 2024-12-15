@@ -2,7 +2,7 @@
 
 **UpdateO2Cloud** est une application Windows conçue pour mettre à jour divers composants de votre système, tels que Microsoft Office, Windows, et Bitdefender, en utilisant des arguments en ligne de commande. Elle fournit également une interface graphique simple pour effectuer ces mises à jour manuellement.
 
-![Screen](https://i.imgur.com/x4dh28q.png)
+![Screen](https://i.imgur.com/DohCsTV.png)
 
 - [X] Finish UpdateO2Cloud
 - [X] Push my commits to GitHub
