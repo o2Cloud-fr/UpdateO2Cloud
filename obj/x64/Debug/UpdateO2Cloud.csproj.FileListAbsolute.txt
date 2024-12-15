@@ -1,0 +1,11 @@
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\bin\x64\Debug\UpdateO2Cloud.exe.config
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\bin\x64\Debug\UpdateO2Cloud.exe
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\bin\x64\Debug\UpdateO2Cloud.pdb
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.csproj.AssemblyReference.cache
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.csproj.SuggestedBindingRedirects.cache
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.Form1.resources
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.Properties.Resources.resources
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.csproj.GenerateResource.cache
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.csproj.CoreCompileInputs.cache
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.exe
+C:\Users\MyAlien\source\repos\UpdateO2Cloud\UpdateO2Cloud\obj\x64\Debug\UpdateO2Cloud.pdb
