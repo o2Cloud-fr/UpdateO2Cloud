@@ -3,6 +3,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Drawing;
+using System.Management;
 
 namespace UpdateO2Cloud
 {
@@ -17,6 +18,7 @@ namespace UpdateO2Cloud
             InitializeComponent();
             InitializeCustomComponents();
             ApplyOffice2019Theme();
+            GetAntivirusName();
 
             // Empêche le redimensionnement
             this.FormBorderStyle = FormBorderStyle.FixedSingle; // Bordure fixe
@@ -31,6 +33,27 @@ namespace UpdateO2Cloud
             else
             {
                 // Si aucun argument n'est passé, ne rien faire
+            }
+        }
+
+        private void GetAntivirusName()
+        {
+            try
+            {
+                string antivirusName = "Aucun antivirus trouvé.";
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"root\SecurityCenter2", "SELECT * FROM AntivirusProduct");
+
+                foreach (ManagementObject obj in searcher.Get())
+                {
+                    antivirusName = obj["displayName"]?.ToString() ?? "Inconnu";
+                    break; // Prendre le premier antivirus trouvé
+                }
+
+                labelAntivirus.Text = $"Antivirus : {antivirusName}";
+            }
+            catch (Exception ex)
+            {
+                labelAntivirus.Text = $"Erreur : {ex.Message}";
             }
         }
 
@@ -101,6 +124,7 @@ namespace UpdateO2Cloud
                                 "/officever\n" +
                                 "/winver\n" +
                                 "/winupdate\n" +
+                                "/avsecname\n" +
                                 "/avsecupdate",
                                 "Erreur",
                                 MessageBoxButtons.OK,
@@ -132,6 +156,13 @@ namespace UpdateO2Cloud
                 button6_Click(null, null);
                 Environment.Exit(0);  // Force la fermeture de l'application
             }
+            else if (args.Contains("/avsecname"))
+            {
+                string antivirusName = GetAntivirusNameSilent();
+                MessageBox.Show($"Nom de l'antivirus détecté : {antivirusName}", "Nom de l'antivirus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Environment.Exit(0);  // Force la fermeture de l'application
+            }
+
             else
             {
                 // Si les arguments ne sont pas valides
@@ -141,6 +172,7 @@ namespace UpdateO2Cloud
                                 "/officever\n" +
                                 "/winver\n" +
                                 "/winupdate\n" +
+                                "/avsecname\n" +
                                 "/avsecupdate",
                                 "Erreur",
                                 MessageBoxButtons.OK,
@@ -283,5 +315,27 @@ namespace UpdateO2Cloud
                 MessageBox.Show($"Une exception s'est produite :\n{ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private string GetAntivirusNameSilent()
+        {
+            try
+            {
+                string antivirusName = "Aucun antivirus trouvé.";
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"root\SecurityCenter2", "SELECT * FROM AntivirusProduct");
+
+                foreach (ManagementObject obj in searcher.Get())
+                {
+                    antivirusName = obj["displayName"]?.ToString() ?? "Inconnu";
+                    break; // Prendre le premier antivirus trouvé
+                }
+
+                return antivirusName;  // Retourner le nom de l'antivirus
+            }
+            catch (Exception ex)
+            {
+                return $"Erreur : {ex.Message}";  // Retourner l'erreur si une exception se produit
+            }
+        }
+
     }
 }

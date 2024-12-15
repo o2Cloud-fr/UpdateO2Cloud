@@ -42,6 +42,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.labelAntivirus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +86,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(105, 264);
+            this.label5.Location = new System.Drawing.Point(115, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 13);
             this.label5.TabIndex = 9;
@@ -113,7 +114,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(462, 105);
+            this.label9.Location = new System.Drawing.Point(456, 95);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 13);
             this.label9.TabIndex = 11;
@@ -123,7 +124,7 @@
             // 
             this.button6.BackgroundImage = global::UpdateO2Cloud.Properties.Resources.bitdefender_icon_146218;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Location = new System.Drawing.Point(465, 121);
+            this.button6.Location = new System.Drawing.Point(464, 111);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(79, 76);
             this.button6.TabIndex = 10;
@@ -134,7 +135,7 @@
             // 
             this.button3.BackgroundImage = global::UpdateO2Cloud.Properties.Resources.info_information_icon;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(107, 280);
+            this.button3.Location = new System.Drawing.Point(117, 280);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(79, 76);
             this.button3.TabIndex = 7;
@@ -156,7 +157,7 @@
             // 
             this.button2.BackgroundImage = global::UpdateO2Cloud.Properties.Resources.microsoft_office_365_icon_3;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(108, 111);
+            this.button2.Location = new System.Drawing.Point(125, 111);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 76);
             this.button2.TabIndex = 2;
@@ -174,11 +175,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // labelAntivirus
+            // 
+            this.labelAntivirus.AutoSize = true;
+            this.labelAntivirus.Location = new System.Drawing.Point(447, 352);
+            this.labelAntivirus.Name = "labelAntivirus";
+            this.labelAntivirus.Size = new System.Drawing.Size(69, 13);
+            this.labelAntivirus.TabIndex = 15;
+            this.labelAntivirus.Text = "labelAntivirus";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 374);
+            this.Controls.Add(this.labelAntivirus);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button6);
@@ -215,6 +226,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label labelAntivirus;
     }
 }
 
