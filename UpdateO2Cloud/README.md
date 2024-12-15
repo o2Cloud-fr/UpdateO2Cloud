@@ -2,7 +2,7 @@
 
 **UpdateO2Cloud** est une application Windows conçue pour mettre à jour divers composants de votre système, tels que Microsoft Office, Windows, et Bitdefender, en utilisant des arguments en ligne de commande. Elle fournit également une interface graphique simple pour effectuer ces mises à jour manuellement.
 
-![Screen](https://i.imgur.com/x4dh28q.png)
+![Screen](https://i.imgur.com/DohCsTV.png)
 
 - [X] Finish UpdateO2Cloud
 - [X] Push my commits to GitHub
@@ -10,12 +10,12 @@
 
 ## Fonctionnalités
 
-- Mise à jour automatique de Microsoft Office via ```OfficeC2RClient.exe.
-- Vérification de la version d'Office avec ```IntegratedOffice.exe.
-- Mise à jour de Windows via la commande ```control update.
-- Vérification de la version de Windows avec ```winver.
-- Mise à jour du logiciel de sécurité Bitdefender via ```updcenter.exe.
-- Vérification du nom de l'antivirus ```avsecname.
+- Mise à jour automatique de Microsoft Office via `OfficeC2RClient.exe`.
+- Vérification de la version d'Office avec `IntegratedOffice.exe`.
+- Mise à jour de Windows via la commande `control update`.
+- Vérification de la version de Windows avec `winver`.
+- Mise à jour du logiciel de sécurité Bitdefender via `updcenter.exe`.
+- Vérification du nom de l'antivirus `avsecname`.
 - Interface graphique avec un menu et une barre d'outils personnalisés.
 - Prise en charge des arguments en ligne de commande pour un mode silencieux ou des mises à jour spécifiques.
 
@@ -79,7 +79,7 @@ C#
 
 ## License
 
-[Apache-2.0 license](https://github.com/o2Cloud-fr/Discord-MailerBot/blob/main/LICENSE)
+[Apache-2.0 license](https://github.com/o2Cloud-fr/UpdateO2Cloud/blob/main/LICENSE)
 
 
 ![Logo](https://o2cloud.fr/logo/o2Cloud.png)

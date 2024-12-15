@@ -79,7 +79,7 @@ C#
 
 ## License
 
-[Apache-2.0 license](https://github.com/o2Cloud-fr/Discord-MailerBot/blob/main/LICENSE)
+[Apache-2.0 license](https://github.com/o2Cloud-fr/UpdateO2Cloud/blob/main/LICENSE)
 
 
 ![Logo](https://o2cloud.fr/logo/o2Cloud.png)
