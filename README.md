@@ -10,12 +10,12 @@
 
 ## Fonctionnalités
 
-- Mise à jour automatique de Microsoft Office via ```OfficeC2RClient.exe.
-- Vérification de la version d'Office avec ```IntegratedOffice.exe.
-- Mise à jour de Windows via la commande ```control update.
-- Vérification de la version de Windows avec ```winver.
-- Mise à jour du logiciel de sécurité Bitdefender via ```updcenter.exe.
-- Vérification du nom de l'antivirus ```avsecname.
+- Mise à jour automatique de Microsoft Office via `OfficeC2RClient.exe`.
+- Vérification de la version d'Office avec `IntegratedOffice.exe`.
+- Mise à jour de Windows via la commande `control update`.
+- Vérification de la version de Windows avec `winver`.
+- Mise à jour du logiciel de sécurité Bitdefender via `updcenter.exe`.
+- Vérification du nom de l'antivirus `avsecname`.
 - Interface graphique avec un menu et une barre d'outils personnalisés.
 - Prise en charge des arguments en ligne de commande pour un mode silencieux ou des mises à jour spécifiques.
 
