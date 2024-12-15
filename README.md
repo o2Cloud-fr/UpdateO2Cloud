@@ -4,9 +4,6 @@
 
 ![Screen](https://i.imgur.com/x4dh28q.png)
 
-```diff
-- Coming soon
-```
 - [X] Finish UpdateO2Cloud
 - [X] Push my commits to GitHub
 
