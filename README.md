@@ -23,8 +23,8 @@
 
 ## Pré-requis
 
-- Windows 7 ou supérieur
-- .NET Framework 4.7.2 ou supérieur
+- Windows 10 ou supérieur
+- .NET Framework 4.8.1 ou supérieur
 
 ## Utilisation
 
